@@ -1,0 +1,212 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-custom {
+            background-image: url(img/Five\ colleges\ you\ must\ visit\ in\ Cambridge\ -\ home\ is\ here.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blur-background {
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const nama = document.getElementById("nama").value;
+            const nisn = document.getElementById("nisn").value;
+            const email = document.getElementById("email").value;
+            const namaPattern = /^[a-zA-Z\s]+$/;
+            const nisnPattern = /^[0-9]+$/;
+
+            if (!namaPattern.test(nama)) {
+                alert("Nama hanya boleh mengandung huruf dan spasi.");
+                return false;
+            }
+
+            if (!nisnPattern.test(nisn)) {
+                alert("NISN hanya boleh mengandung angka.");
+                return false;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Format email tidak valid.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body class="bg-custom flex items-center justify-center min-h-screen">
+    <div class="bg-white bg-opacity-20 p-8 rounded-lg shadow-lg w-full max-w-md blur-background">
+        <h2 class="text-2xl font-bold mb-6 text-center">Daftar untuk masuk</h2>
+        <form name="formku" action="#" method="POST" onsubmit="return validateForm()">
+            <div class="mb-4">
+                <label for="nama" class="block text-black-700 text-sm font-bold mb-2">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="mb-4">
+                <label for="Nomor" class="block text-black-700 text-sm font-bold mb-2">Nomor Hand Phone:</label>
+                <input type="text" id="Nomor" name="nisn" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan nomor handphone" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-black-700 text-sm font-bold mb-2">Email:</label>
+                <input type="text" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan email" required>
+            </div> 
+            <div class="mb-4">
+                <label for="user" class="block text-black-700 text-sm font-bold mb-2">Username Account:</label>
+                <input type="text" id="user" name="user" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan username anda" required>
+            </div>
+           
+            <div class="mb-4">
+                <label for="jalur" class="block text-black-700 text-sm font-bold mb-2">Pilih Kelas </label>
+                <select id="jalur" name="jalur" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    <option value="" disabled selected>Pilih Kelas</option>
+                    <option value="Prestasi">Kelas X SMA/K</option>
+                    <option value="Zonasi">Kelas XI SMA/K</option>
+                    <option value="Afirmasi">Kelas XII SMA/K</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="jurusan" class="block text-black-700 text-sm font-bold mb-2">Pilih Jurusan:</label>
+                <select id="jurusan" name="jurusan" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    <option value="" disabled selected>Pilih Jurusan </option>
+                    <option value="RPL">RPL</option>
+                    <option value="DKV">DKV</option>
+                    <option value="TKJ">TKJ</option>
+                    <option value="MKT">MKT</option>
+                    <option value="TPM">TPM</option>
+                    <option value="TKR">TKR</option>
+                    <option value="TBKR">TBKR</option>
+                    <option value="TL">TL</option>
+                    <option value="APHP">APHP</option>
+                    <option value="ATPH">ATPH</option>
+                    <option value="IPA">IPA</option>
+                    <option value="IPS">IPS</option>
+                    <option value="Bahasa">Bahasa</option>
+                </select>
+            </div>
+            <div class="flex items-center justify-between">
+                <button type="submit" class="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Daftar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-custom {
+            background-image: url(img/Five\ colleges\ you\ must\ visit\ in\ Cambridge\ -\ home\ is\ here.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blur-background {
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const nama = document.getElementById("nama").value;
+            const nomor = document.getElementById("nomor").value;
+            const email = document.getElementById("email").value;
+            const namaPattern = /^[a-zA-Z\s]+$/;
+            const nomorPattern = /^[0-9]+$/;
+
+            if (!namaPattern.test(nama)) {
+                alert("Nama hanya boleh mengandung huruf dan spasi.");
+                return false;
+            }
+
+            if (!nomorPattern.test(nomor)) {
+                alert("Nomor Hand Phone hanya boleh mengandung angka.");
+                return false;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Format email tidak valid.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body class="bg-custom flex items-center justify-center min-h-screen">
+    <div class="bg-white bg-opacity-20 p-8 rounded-lg shadow-lg w-full max-w-md blur-background">
+        <h2 class="text-2xl font-bold mb-6 text-center">Daftar untuk masuk</h2>
+        <form name="formku" action="#" method="POST" onsubmit="return validateForm()">
+            <div class="mb-4">
+                <label for="nama" class="block text-gray-700 text-sm font-bold mb-2">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="mb-4">
+                <label for="nomor" class="block text-gray-700 text-sm font-bold mb-2">Nomor Hand Phone:</label>
+                <input type="text" id="nomor" name="nomor" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan nomor handphone" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                <input type="text" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan email" required>
+            </div> 
+            <div class="mb-4">
+                <label for="user" class="block text-gray-700 text-sm font-bold mb-2">Username Account:</label>
+                <input type="text" id="user" name="user" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan username anda" required>
+            </div>
+           
+            <div class="mb-4">
+                <label for="jalur" class="block text-gray-700 text-sm font-bold mb-2">Pilih Kelas</label>
+                <select id="jalur" name="jalur" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    <option value="" disabled selected>Pilih Kelas</option>
+                    <option value="Prestasi">Kelas X SMA/K</option>
+                    <option value="Zonasi">Kelas XI SMA/K</option>
+                    <option value="Afirmasi">Kelas XII SMA/K</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="jurusan" class="block text-gray-700 text-sm font-bold mb-2">Pilih Jurusan:</label>
+                <select id="jurusan" name="jurusan" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    <option value="" disabled selected>Pilih Jurusan</option>
+                    <option value="RPL">RPL</option>
+                    <option value="DKV">DKV</option>
+                    <option value="TKJ">TKJ</option>
+                    <option value="MKT">MKT</option>
+                    <option value="TPM">TPM</option>
+                    <option value="TKR">TKR</option>
+                    <option value="TBKR">TBKR</option>
+                    <option value="TL">TL</option>
+                    <option value="APHP">APHP</option>
+                    <option value="ATPH">ATPH</option>
+                    <option value="IPA">IPA</option>
+                    <option value="IPS">IPS</option>
+                    <option value="Bahasa">Bahasa</option>
+                </select>
+            </div>
+            <div class="flex items-center justify-between">
+                <button type="submit" class="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Daftar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
