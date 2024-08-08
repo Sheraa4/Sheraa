@@ -1,0 +1,65 @@
+body {
+    background-image: url(img/Five\ colleges\ you\ must\ visit\ in\ Cambridge\ -\ home\ is\ here.jpeg);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message.user {
+    background-color: #f8dec6;
+    align-self: flex-end;
+}
+
+.message.other {
+    background-color: #96bff8;
+    align-self: flex-start;
+}
+
+#message-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+#send-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffbab9;
+    color: #292a1f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}

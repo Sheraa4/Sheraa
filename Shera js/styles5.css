@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url(img/Five\ colleges\ you\ must\ visit\ in\ Cambridge\ -\ home\ is\ here.jpeg);
+}
+
+header {
+    background-color: #ffd5b0;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    color: #f08d72;
+}
+
+#materials, #upload {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#materialList {
+    list-style: none;
+    padding: 0;
+}
+
+#materialList li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #fff1c7;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input {
+    margin-bottom: 1rem;
+}
+
+form button {
+    padding: 0.5rem;
+    background: #fbb688;
+    color: #040202;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form button:hover {
+    background: #555;
+}

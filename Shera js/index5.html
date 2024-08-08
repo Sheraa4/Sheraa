@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <header>
+        <h1>Berbagi materi</h1>
+    </header>
+
+    <main>
+        <section id="materials">
+            <h2>Materials</h2>
+            <ul id="materialList">
+                <!-- Materi akan ditambahkan di sini oleh JavaScript -->
+            </ul>
+        </section>
+
+        <section id="upload">
+            <h2>Upload New Material</h2>
+            <form id="uploadForm">
+                <label for="materialTitle">Title:</label>
+                <input type="text" id="materialTitle" name="materialTitle" required>
+                <label for="materialFile">File:</label>
+                <input type="file" id="materialFile" name="materialFile" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script3.js"></script>
+</body>
+</html>
